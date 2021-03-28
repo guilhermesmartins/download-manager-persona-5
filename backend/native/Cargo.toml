@@ -1,0 +1,18 @@
+[package]
+name = "backend"
+version = "0.1.0"
+authors = ["guilhermeSmartins <mineg4500@gmail.com>"]
+license = "MIT"
+build = "build.rs"
+edition = "2018"
+exclude = ["artifacts.json", "index.node"]
+
+[lib]
+name = "backend"
+crate-type = ["cdylib"]
+
+[build-dependencies]
+neon-build = "0.8.0"
+
+[dependencies]
+neon = "0.8.0"
